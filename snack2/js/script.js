@@ -22,3 +22,18 @@ for(let i = 0; i < squadre.length; i++){
 }
 //Output
 console.log(squadre);
+
+//Dichiaro un nuovo array vuoto
+const newSquadre = [];
+//Faccio un ciclo per richiamare tutti gli oggetti del array squadre
+for(let i = 0; i < squadre.length; i++){
+    //costruisco l'oggetto che devo andare a pushare nel nuovo array
+    const oggetto = {
+        'name': squadre[i].name ,  //costruisco valore nome e prendo valore nome da ogni singolo oggetto del vecchio array
+        'falli' : squadre[i].falli //costruisco valore falli e prendo valore falli da ogni singolo oggetto del vecchio array
+    };
+    //pusho il nuovo oggetto nell'array
+    newSquadre.push(oggetto);
+}
+//Output
+console.log(newSquadre);
